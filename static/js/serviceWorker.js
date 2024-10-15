@@ -3,7 +3,7 @@ const assets = [
   "static/css/style.css",
   "static/js/app.js",
   "static/images/logo.png",
-  "static/images/favicon.jpg",
+  "static/images/favicon.png", // from .jpg > .png!!
   "static/icons/homercon-128.png",
   "static/icons/homercon-192.png",
   "static/icons/homercon-384.png",
