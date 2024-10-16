@@ -124,3 +124,32 @@ nav h1 {
   text-align: justify;
   text-justify: inter-word;
 }
+
+.form-label {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+.form-control {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+button.submit {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
