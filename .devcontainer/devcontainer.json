@@ -34,7 +34,6 @@
       },
       "extensions": [
         "McCarter.start-git-bash",
-        "alexcvzz.vscode-sqlite",
         "medo64.render-crlf",
         "ecmel.vscode-html-css",
         "ms-vscode.js-debug",

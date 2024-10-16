@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -125,31 +126,41 @@ nav h1 {
   text-justify: inter-word;
 }
 
-.form-label {
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  overflow: hidden;
+/*below is the about.html stuff */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-label,
 .form-control {
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  overflow: hidden;
+    font-size: large;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.form-control {
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 button.submit {
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  overflow: hidden;
+    font-size: large;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
