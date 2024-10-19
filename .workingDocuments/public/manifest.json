@@ -8,51 +8,51 @@
   "orientation": "landscape-primary",
   "icons": [
     {
-      "src": "icons/icon-128x128.png",
+      "src": "icons/homercon-128.png",
       "type": "image/png",
-      "sizes": "128x128",
+      "sizes": "128",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-128x128.png",
+      "src": "icons/homercon-128.png",
       "type": "image/png",
-      "sizes": "128x128",
+      "sizes": "128",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-192x192.png",
+      "src": "icons/homercon-192.png",
       "type": "image/png",
-      "sizes": "192x192",
+      "sizes": "192",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-192x192.png",
+      "src": "icons/homercon-192.png",
       "type": "image/png",
-      "sizes": "192x192",
+      "sizes": "192",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-384x384.png",
+      "src": "icons/homercon-384.png",
       "type": "image/png",
-      "sizes": "384x384",
+      "sizes": "384",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-384x384.png",
+      "src": "icons/homercon-384.png",
       "type": "image/png",
-      "sizes": "384x384",
+      "sizes": "384",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "icons/homercon-512.png",
       "type": "image/png",
-      "sizes": "512x512",
+      "sizes": "512",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "icons/homercon-512.png",
       "type": "image/png",
-      "sizes": "512x512",
+      "sizes": "512",
       "purpose": "any"
     }
   ],
@@ -65,7 +65,7 @@
     },
     {
       "src": "icons/mobile_screenshot.png",
-      "sizes": "1080x1920",
+      "sizes": "10800",
       "type": "image/png",
       "form_factor": "wide",
       "label": ""
