@@ -1,0 +1,34 @@
+[
+{
+"extID":1,
+"name":"Live Server",
+"hyperlink":"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer",
+"about":"Launch a development local Server with live reload feature for static & dynamic pages",
+"image":"https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1661914858952/Microsoft.VisualStudio.Services.Icons.Default",
+"language":"HTML CSS JS"
+},
+{
+"extID":2,
+"name":"Render CR LF",
+"hyperlink":"https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf",
+"about":"Displays the line ending symbol and optionally extra whitespace when 'Render whitespace' is turned on.",
+"image":"https://medo64.gallerycdn.vsassets.io/extensions/medo64/render-crlf/1.7.1/1689315206970/Microsoft.VisualStudio.Services.Icons.Default",
+"language":"#BASH"
+},
+{
+"extID":3,
+"name":"Start GIT BASH",
+"hyperlink":"https://marketplace.visualstudio.com/items?itemName=McCarter.start-git-bash",
+"about":"Adds a bash command to VSCode that allows you to start git-bash in the current workspace's root folder.",
+"image":"https://mccarter.gallerycdn.vsassets.io/extensions/mccarter/start-git-bash/1.2.1/1499505567572/Microsoft.VisualStudio.Services.Icons.Default",
+"language":"#BASH"
+},
+{
+"extID":4,
+"name":"SQLite3 Editor",
+"hyperlink":"https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor",
+"about":"Edit SQLite3 files like you would in spreadsheet applications.",
+"image":"https://yy0931.gallerycdn.vsassets.io/extensions/yy0931/vscode-sqlite3-editor/1.0.85/1690893830873/Microsoft.VisualStudio.Services.Icons.Default",
+"language":"SQL"
+}
+]
