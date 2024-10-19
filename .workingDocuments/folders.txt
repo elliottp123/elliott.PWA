@@ -1,5 +1,13 @@
-static
-css
-icons
-images
-js
+.database
+.workingdocuments
+public
+    css
+    icons
+    images
+    js
+    index.html
+    about.html
+    manifest.json
+    serviceworker.js
+LICENSE
+index.js

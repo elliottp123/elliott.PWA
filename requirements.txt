@@ -1,3 +1,2 @@
-Flask
-bcrypt
-flask_wtf
+sqlite3
+express

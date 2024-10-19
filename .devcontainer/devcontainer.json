@@ -1,20 +1,12 @@
 {
+  "name": "HTML, CSS & JS",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "hostRequirements": {
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "pip install -r requirements.txt",
+  "updateContentCommand": "npm install -r requirements.txt",
   "postCreateCommand": "",
-  "postAttachCommand": {
-    "server": "flask --debug run"
-  },
-  "portsAttributes": {
-    "5000": {
-      "label": "Application",
-      "onAutoForward": "openPreview"
-    }
-  },
   "customizations": {
     "vscode": {
       "settings": {
@@ -34,12 +26,12 @@
       },
       "extensions": [
         "McCarter.start-git-bash",
+        "yy0931.vscode-sqlite3-editor",
         "medo64.render-crlf",
         "ecmel.vscode-html-css",
         "ms-vscode.js-debug",
         "dbaeumer.vscode-eslint",
         "miramac.vscode-exec-node",
-        "yy0931.vscode-sqlite3-editor",
         "oderwat.indent-rainbow",
         "ritwickdey.LiveServer",
         "tomoki1207.pdf",
@@ -49,6 +41,11 @@
         "ms-vscode-remote.remote-wsl",
         "ms-azuretools.vscode-docker"
       ]
+    }
+  },
+  "portsAttributes": {
+    "5000": {
+      "label": "Application"
     }
   },
   "forwardPorts": [5000]

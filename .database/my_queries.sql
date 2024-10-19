@@ -1,5 +1,0 @@
-CREATE TABLE contact_list(
-    ID INTEGER PRIMARY KEY AUTOINCREMENT, 
-    email TEXT NOT NULL, 
-    name TEXT NOT NULL
-);
