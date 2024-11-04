@@ -1,24 +1,55 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+const sqlite3 = require("sqlite3").verbose();
+const db = new sqlite3.Database(".database/data_source.db");
 
-// Add CORS headers for all routes
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    next();
-});
-
-app.use(express.static('public', {
-    setHeaders: (res, path, stat) => {
-        if (path.endsWith('.json')) {
-            res.set('Content-Type', 'application/json');
-            res.set('Access-Control-Allow-Origin', '*');
-        }
+let myString = "[\n";
+db.all("SELECT * FROM extension", function (err, rows) {
+  let myCounter = 0;
+  rows.forEach(function (row) {
+    // for debugging
+    // console.log(row.extID + ": " + row.name + ": " + row.hyperlink + ": " + row.about + ": " + row.image + ": " + row.language);
+    myString =
+      myString +
+      '{\n"extID":' +
+      row.extID +
+      ',\n"name":"' +
+      row.name +
+      '",\n"hyperlink":"' +
+      row.hyperlink +
+      '",\n"about":"' +
+      row.about +
+      '",\n"image":"' +
+      row.image +
+      '",\n"language":"' +
+      row.language;
+    myCounter++;
+    if (myCounter == rows.length) {
+      myString = myString + '"\n}\n';
+    } else {
+      myString = myString + '"\n},\n';
     }
-}));
+  });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  // console.log(myString);
+  var fs = require("fs");
+  fs.writeFile("public/frontEndData.json", myString + "]", function (err) {
+    if (err) {
+      console.log(err);
+    }
+  });
 });
+// Insert additional backend js above the express server configuration
+
+const express = require("express");
+const path = require("path");
+const app = express();
+app.use(express.static(path.join(__dirname, "public")));
+
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "public/index/index.html"));
+});
+app.listen(5000, () =>
+  console.log(
+    "Server is running on Port 5000, visit http://localhost:5000/ or http://127.0.0.1:5000 to access your website"
+  )
+);
+
