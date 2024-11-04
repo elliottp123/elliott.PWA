@@ -1,5 +1,6 @@
 let result = "";
-fetch("./frontEndData.json")
+
+fetch("/api/catalogue")
   .then(function (response) {
     return response.json();
   })
@@ -9,6 +10,7 @@ fetch("./frontEndData.json")
   .catch(function (err) {
     console.log("error: " + err);
   });
+
 function appendData(data) {
   data.forEach(({ name, image, hyperlink, about, language } = rows) => {
     result += `
@@ -21,4 +23,16 @@ function appendData(data) {
         `;
   });
   document.querySelector(".container").innerHTML = result;
+}
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('ServiceWorker registration successful');
+            })
+            .catch(err => {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+    });
 }
