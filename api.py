@@ -3,7 +3,7 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/api/catalogue', methods=['GET'])
+@app.route('/frontEndData.json', methods=['GET'])
 def get_catalogue():
     with open('public/frontEndData.json', 'r') as file:
         catalogue = json.load(file)

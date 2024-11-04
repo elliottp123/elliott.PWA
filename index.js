@@ -5,11 +5,11 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/api/catalogue', (req, res) => {
+app.get('/frontEndData.json', (req, res) => {
     const options = {
         hostname: 'localhost',
         port: 5000,
-        path: '/api/catalogue',
+        path: '/frontEndData.json',
         method: 'GET'
     };
 
@@ -38,4 +38,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
