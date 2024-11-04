@@ -16,7 +16,6 @@ main {
   text-align: center;
 }
 
-/* instruction 2 */
 nav {
   display: flex;
   justify-content: space-between;
