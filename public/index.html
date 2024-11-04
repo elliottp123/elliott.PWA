@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elliott PWA</title>
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
     <link rel="stylesheet" href="style.css">
 </head>
+
+<nav>
+    <img src="images\logo.png" alt="VSCode Extensions site logo." />
+    <h1>VSCode Extensions</h1>
+    <ul class="topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="add.html">Add me</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <!-- Container for app.js content -->
+        <div id="app-container">
+            <!-- Dynamic content from app.js will load here -->
+        </div>
+
+        <!-- Container for API data -->
+        <div id="api-container">
+            <!-- API data will be displayed here -->
+        </div>
+
+        <!-- Container for extensions list -->
+        <div id="extensions-list">
+            <!-- VSCode extensions will be listed here -->
+        </div>
+    </div>
+
     <script src="app.js"></script>
     <script src="frontEnd.js"></script>
     <script>

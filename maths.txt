@@ -1,0 +1,56 @@
+hyperbola notes:
+
+
+they are exponential graphs that prety much acentone to the x and y axsis
+
+y = 1/x and y = x ^-1 
+are both hyperbolas
+veeery simple.
+
+y = 1/x
+
+so if  y = k/x, and k is increasing, it gets further from 0
+but not steeper or flatter, as seen if you zoom out on desmos
+
+so if a hyperbola goes through -3, 5, 
+y = k/x
+
+-3 = k/5
+k = -3 * 5
+-15
+therefore, the function for this graph is
+y = -15/x
+
+DO the following points lie on the curve 3/x?
+3,1 or 1,4
+y = 3/x
+y = 3/3
+y = 1
+YES!!!
+
+y = 3/4 = .75
+NO!
+
+
+y = + 1/x +5
+
+
+ x
+ |  | ()
+ |  \___
+ | _______ y =5
+ |
+ |
+ |
+ ___________ y = 0
+
+
+ y = 1/x -2
+
+    | |
+    | |
+    | |
+    | |
+    |_|_______x=0
+    | \____
+    |_________x=-2

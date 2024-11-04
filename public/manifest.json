@@ -1,74 +1,9 @@
 {
-  "name": "VSCode Extension Catalogue",
-  "short_name": "vscodeextcat",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#14E6DD",
-  "orientation": "landscape-primary",
-  "icons": [
-    {
-      "src": "icons/homercon-128.png",
-      "type": "image/png",
-      "sizes": "128",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/homercon-128.png",
-      "type": "image/png",
-      "sizes": "128",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/homercon-192.png",
-      "type": "image/png",
-      "sizes": "192",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/homercon-192.png",
-      "type": "image/png",
-      "sizes": "192",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/homercon-384.png",
-      "type": "image/png",
-      "sizes": "384",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/homercon-384.png",
-      "type": "image/png",
-      "sizes": "384",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/homercon-512.png",
-      "type": "image/png",
-      "sizes": "512",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/homercon-512.png",
-      "type": "image/png",
-      "sizes": "512",
-      "purpose": "any"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "icons/desktop_screenshot.png",
-      "sizes": "1920x1080",
-      "type": "image/png",
-      "label": ""
-    },
-    {
-      "src": "icons/mobile_screenshot.png",
-      "sizes": "10800",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": ""
-    }
-  ]
+    "name": "Elliott PWA",
+    "short_name": "Elliott",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": []
 }

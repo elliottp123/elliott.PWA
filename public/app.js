@@ -1,20 +1,21 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+// API endpoints and handlers
+const API_URL = '/api';
 
-app.use(express.static('public'));
+// Fetch data from the server
+async function getData() {
+    const response = await fetch(`${API_URL}/data`);
+    return response.json();
+}
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
+// Send data to the server
+async function postData(data) {
+    const response = await fetch(`${API_URL}/data`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    });
+    return response.json();
+}
 
-app.get('/api/data', (req, res) => {
-    res.json({ message: 'API is working' });
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
-
-module.exports = app;
