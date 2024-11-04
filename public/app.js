@@ -1,38 +1,20 @@
-let result = "";
+const express = require('express');
+const path = require('path');
+const app = express();
 
-fetch("/api/catalogue")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    appendData(data);
-  })
-  .catch(function (err) {
-    console.log("error: " + err);
-  });
+app.use(express.static('public'));
 
-function appendData(data) {
-  data.forEach(({ name, image, hyperlink, about, language } = rows) => {
-    result += `
-        <div class="card">
-        <img class="card-image" src="${image}" alt="Product image for the ${name} VSCode extension."/>
-        <h1 class="card-name">${name}</h1>
-        <p class="card-about">${about}</p>
-        <a class="card-link" href="${hyperlink}"><button class="btn">Read More</button></a>
-        </div>
-        `;
-  });
-  document.querySelector(".container").innerHTML = result;
-}
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-                console.log('ServiceWorker registration successful');
-            })
-            .catch(err => {
-                console.log('ServiceWorker registration failed: ', err);
-            });
-    });
-}
+app.get('/api/data', (req, res) => {
+    res.json({ message: 'API is working' });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+
+module.exports = app;

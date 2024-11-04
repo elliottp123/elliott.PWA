@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elliott's PWA</title>
+    <title>Elliott PWA</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#000000">
-    <link rel="apple-touch-icon" href="images/icon-192x192.png">
 </head>
 <body>
-    <div class="container"></div>
+    <div id="root"></div>
+    <script src="app.js"></script>
     <script src="frontEnd.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('serviceworker.js')
-                .then((reg) => console.log('Service worker registered'))
-                .catch((err) => console.log('Service worker not registered', err));
+                .then(registration => {
+                    console.log('ServiceWorker registration successful');
+                })
+                .catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
         }
     </script>
 </body>

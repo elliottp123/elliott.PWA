@@ -1,7 +1,7 @@
 let result = "";
 
 console.log("Starting fetch...");
-fetch("http://localhost:5000/frontEndData.json")
+fetch("frontEndData.json")
   .then(function (response) {
     console.log("Response status:", response.status);
     return response.json();
